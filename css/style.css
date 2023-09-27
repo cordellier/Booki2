@@ -208,6 +208,7 @@ form button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .card-hebergement {
@@ -419,6 +420,15 @@ section .activites {
         display: none;
     }
 
+    .btn-search p {
+        margin-bottom: 35px;
+    }
+
+    /* **********FILTER************ */
+    .filters {
+        margin-top: 25px;
+    }
+
     /* **********INFOS************ */
     .info {
         margin-top: 25px;
@@ -428,14 +438,20 @@ section .activites {
         flex-direction: column-reverse;
     }
 
+    .hebergements-and-populaires .hebergements {
+        background: white;
+        width: 99%;
+        margin: auto;
+    }
     .hebergements-and-populaires>section {
-        background-color: white;
+        background-color: var(--main-bg-color);
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
     }
 
     /* *********POPULAIRES********** */
-    .populaires {
-        background-color: var(--main-bg-color);
-    }
     .populaires-cards {
         display: flex;
         flex-direction: column;
@@ -448,11 +464,13 @@ section .activites {
     }
     
     .hebergements-cards {
+        display: flex;
         flex-direction: column;
+        width: 100%;
     }
     
-    .card-hebergement {
-        width: 475%;
+    .hebergements-cards a {
+        width: 100%;
     }
 
     /* ***********ACTIVITE MARSEILLE******** */
